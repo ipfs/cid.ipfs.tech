@@ -342,6 +342,13 @@
     "description": "Torrent file (bencoded)",
     "code": 124
   },
+  "128": {
+    "name": "blake3-hashseq",
+    "tag": "ipld",
+    "status": "draft",
+    "description": " BLAKE3 hash sequence - per Iroh collections spec",
+    "code": 128
+  },
   "129": {
     "name": "leofcoin-block",
     "tag": "ipld",
