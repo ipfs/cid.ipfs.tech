@@ -25,7 +25,7 @@ function decodeCID (value) {
   return {
     cid,
     multibase: cid.version === 0 ? bases.base58btc : base,
-    multicodec: codecs[cid.code],
+    multicodec: codecs[cid.code] || {name: "unknown multicodec", description: "unknown multicodec", code: cid.code},
     multihash: {
       ...cid.multihash,
       name: codecs[cid.multihash.code]?.name || 'unknown multihash'
