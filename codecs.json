@@ -549,14 +549,14 @@
     "name": "caip-50",
     "tag": "multiformat",
     "status": "draft",
-    "description": "CAIP-50 multi-chain account id",
+    "description": "CAIP-50 multi-chain account ID",
     "code": 202
   },
   "206": {
     "name": "streamid",
     "tag": "namespace",
     "status": "draft",
-    "description": "Ceramic Stream Id",
+    "description": "Ceramic Stream ID",
     "code": 206
   },
   "208": {
@@ -951,6 +951,13 @@
     "description": "",
     "code": 480
   },
+  "481": {
+    "name": "http-path",
+    "tag": "multiaddr",
+    "status": "draft",
+    "description": "Percent-encoded path to an HTTP resource",
+    "code": 481
+  },
   "496": {
     "name": "swhid-1-snp",
     "tag": "ipld",
@@ -1042,6 +1049,13 @@
     "description": "HTTP IPFS Gateway trustless datatransfer",
     "code": 2336
   },
+  "2352": {
+    "name": "transport-filecoin-piece-http",
+    "tag": "transport",
+    "status": "draft",
+    "description": "HTTP piece retrieval from Filecoin storage provider; https://github.com/filecoin-project/FIPs/blob/master/FRCs/frc-0066.md",
+    "code": 2352
+  },
   "3357": {
     "name": "multidid",
     "tag": "multiformat",
@@ -1050,10 +1064,10 @@
     "code": 3357
   },
   "4113": {
-    "name": "fr32-sha2-256-trunc254-padded-binary-tree",
+    "name": "fr32-sha256-trunc254-padbintree",
     "tag": "multihash",
     "status": "draft",
-    "description": "A balanced binary tree hash used in Filecoin Piece Commitments.",
+    "description": "A balanced binary tree hash used in Filecoin Piece Commitments as described in FRC-0069",
     "code": 4113
   },
   "4114": {
@@ -1175,6 +1189,76 @@
     "description": "SM2 public key (compressed)",
     "code": 4614
   },
+  "4615": {
+    "name": "vlad",
+    "tag": "vlad",
+    "status": "draft",
+    "description": "Verifiable Long-lived ADdress",
+    "code": 4615
+  },
+  "4616": {
+    "name": "provenance-log",
+    "tag": "serialization",
+    "status": "draft",
+    "description": "Verifiable and permissioned append-only log",
+    "code": 4616
+  },
+  "4617": {
+    "name": "provenance-log-entry",
+    "tag": "serialization",
+    "status": "draft",
+    "description": "Verifiable and permissioned append-only log entry",
+    "code": 4617
+  },
+  "4618": {
+    "name": "provenance-log-script",
+    "tag": "serialization",
+    "status": "draft",
+    "description": "Verifiable and permissioned append-only log script",
+    "code": 4618
+  },
+  "4619": {
+    "name": "mlkem-512-pub",
+    "tag": "key",
+    "status": "draft",
+    "description": "ML-KEM 512 public key; as specified by FIPS 203",
+    "code": 4619
+  },
+  "4620": {
+    "name": "mlkem-768-pub",
+    "tag": "key",
+    "status": "draft",
+    "description": "ML-KEM 768 public key; as specified by FIPS 203",
+    "code": 4620
+  },
+  "4621": {
+    "name": "mlkem-1024-pub",
+    "tag": "key",
+    "status": "draft",
+    "description": "ML-KEM 1024 public key; as specified by FIPS 203",
+    "code": 4621
+  },
+  "4665": {
+    "name": "multisig",
+    "tag": "multiformat",
+    "status": "draft",
+    "description": "Digital signature multiformat",
+    "code": 4665
+  },
+  "4666": {
+    "name": "multikey",
+    "tag": "multiformat",
+    "status": "draft",
+    "description": "Encryption key multiformat",
+    "code": 4666
+  },
+  "4667": {
+    "name": "nonce",
+    "tag": "nonce",
+    "status": "draft",
+    "description": "Nonce random value",
+    "code": 4667
+  },
   "4864": {
     "name": "ed25519-priv",
     "tag": "key",
@@ -1231,6 +1315,167 @@
     "description": "P-521 private key",
     "code": 4872
   },
+  "4873": {
+    "name": "bls12_381-g1-priv",
+    "tag": "key",
+    "status": "draft",
+    "description": "BLS12-381 G1 private key",
+    "code": 4873
+  },
+  "4874": {
+    "name": "bls12_381-g2-priv",
+    "tag": "key",
+    "status": "draft",
+    "description": "BLS12-381 G2 private key",
+    "code": 4874
+  },
+  "4875": {
+    "name": "bls12_381-g1g2-priv",
+    "tag": "key",
+    "status": "draft",
+    "description": "BLS12-381 G1 and G2 private key",
+    "code": 4875
+  },
+  "4876": {
+    "name": "bls12_381-g1-pub-share",
+    "tag": "key",
+    "status": "draft",
+    "description": "BLS12-381 G1 public key share",
+    "code": 4876
+  },
+  "4877": {
+    "name": "bls12_381-g2-pub-share",
+    "tag": "key",
+    "status": "draft",
+    "description": "BLS12-381 G2 public key share",
+    "code": 4877
+  },
+  "4878": {
+    "name": "bls12_381-g1-priv-share",
+    "tag": "key",
+    "status": "draft",
+    "description": "BLS12-381 G1 private key share",
+    "code": 4878
+  },
+  "4879": {
+    "name": "bls12_381-g2-priv-share",
+    "tag": "key",
+    "status": "draft",
+    "description": "BLS12-381 G2 private key share",
+    "code": 4879
+  },
+  "4880": {
+    "name": "sm2-priv",
+    "tag": "key",
+    "status": "draft",
+    "description": "SM2 private key",
+    "code": 4880
+  },
+  "6676": {
+    "name": "lamport-sha3-512-pub",
+    "tag": "key",
+    "status": "draft",
+    "description": "Lamport public key based on SHA3-512",
+    "code": 6676
+  },
+  "6677": {
+    "name": "lamport-sha3-384-pub",
+    "tag": "key",
+    "status": "draft",
+    "description": "Lamport public key based on SHA3-384",
+    "code": 6677
+  },
+  "6678": {
+    "name": "lamport-sha3-256-pub",
+    "tag": "key",
+    "status": "draft",
+    "description": "Lamport public key based on SHA3-256",
+    "code": 6678
+  },
+  "6692": {
+    "name": "lamport-sha3-512-priv",
+    "tag": "key",
+    "status": "draft",
+    "description": "Lamport private key based on SHA3-512",
+    "code": 6692
+  },
+  "6693": {
+    "name": "lamport-sha3-384-priv",
+    "tag": "key",
+    "status": "draft",
+    "description": "Lamport private key based on SHA3-384",
+    "code": 6693
+  },
+  "6694": {
+    "name": "lamport-sha3-256-priv",
+    "tag": "key",
+    "status": "draft",
+    "description": "Lamport private key based on SHA3-256",
+    "code": 6694
+  },
+  "6708": {
+    "name": "lamport-sha3-512-priv-share",
+    "tag": "key",
+    "status": "draft",
+    "description": "Lamport private key share based on SHA3-512 and split with Shamir gf256",
+    "code": 6708
+  },
+  "6709": {
+    "name": "lamport-sha3-384-priv-share",
+    "tag": "key",
+    "status": "draft",
+    "description": "Lamport private key share based on SHA3-384 and split with Shamir gf256",
+    "code": 6709
+  },
+  "6710": {
+    "name": "lamport-sha3-256-priv-share",
+    "tag": "key",
+    "status": "draft",
+    "description": "Lamport private key share based on SHA3-256 and split with Shamir gf256",
+    "code": 6710
+  },
+  "6724": {
+    "name": "lamport-sha3-512-sig",
+    "tag": "multisig",
+    "status": "draft",
+    "description": "Lamport signature based on SHA3-512",
+    "code": 6724
+  },
+  "6725": {
+    "name": "lamport-sha3-384-sig",
+    "tag": "multisig",
+    "status": "draft",
+    "description": "Lamport signature based on SHA3-384",
+    "code": 6725
+  },
+  "6726": {
+    "name": "lamport-sha3-256-sig",
+    "tag": "multisig",
+    "status": "draft",
+    "description": "Lamport signature based on SHA3-256",
+    "code": 6726
+  },
+  "6740": {
+    "name": "lamport-sha3-512-sig-share",
+    "tag": "multisig",
+    "status": "draft",
+    "description": "Lamport signature share based on SHA3-512 and split with Shamir gf256",
+    "code": 6740
+  },
+  "6741": {
+    "name": "lamport-sha3-384-sig-share",
+    "tag": "multisig",
+    "status": "draft",
+    "description": "Lamport signature share based on SHA3-384 and split with Shamir gf256",
+    "code": 6741
+  },
+  "6742": {
+    "name": "lamport-sha3-256-sig-share",
+    "tag": "multisig",
+    "status": "draft",
+    "description": "Lamport signature share based on SHA3-256 and split with Shamir gf256",
+    "code": 6742
+  },
   "7425": {
     "name": "kangarootwelve",
     "tag": "multihash",
@@ -1265,6 +1510,13 @@
     "status": "draft",
     "description": "The sum of multiple sha2-256 hashes; as specified by Ceramic CIP-124.",
     "code": 28690
+  },
+  "40960": {
+    "name": "chacha20-poly1305",
+    "tag": "multikey",
+    "status": "draft",
+    "description": "ChaCha20_Poly1305 encryption scheme",
+    "code": 40960
   },
   "45569": {
     "name": "blake2b-8",
@@ -3549,10 +3801,10 @@
     "code": 46082
   },
   "46083": {
-    "name": "urdca-2015-canon",
+    "name": "rdfc-1",
     "tag": "ipld",
     "status": "draft",
-    "description": "The result of canonicalizing an input according to URDCA-2015 and then expressing its hash value as a multihash value.",
+    "description": "The result of canonicalizing an input according to RDFC-1.0 and then expressing its hash value as a multihash value.",
     "code": 46083
   },
   "46337": {
@@ -3569,12 +3821,26 @@
     "description": "SSZ Merkle tree root using SHA2-256 as the hashing function and SSZ serialization for the block binary",
     "code": 46338
   },
+  "46352": {
+    "name": "sha2-256-chunked",
+    "tag": "multihash",
+    "status": "draft",
+    "description": "Hash of concatenated SHA2-256 digests of 8*2^n MiB source chunks; n = ceil(log2(source_size/(10^4 * 8MiB)))",
+    "code": 46352
+  },
   "46593": {
     "name": "json-jcs",
     "tag": "ipld",
     "status": "draft",
     "description": "The result of canonicalizing an input according to JCS - JSON Canonicalisation Scheme (RFC 8785)",
     "code": 46593
+  },
+  "46850": {
+    "name": "bittorrent-pieces-root",
+    "tag": "multihash",
+    "status": "draft",
+    "description": "BitTorrent v2 pieces root hash.",
+    "code": 46850
   },
   "52225": {
     "name": "iscc",
@@ -3597,25 +3863,32 @@
     "description": "Namespace for all not yet standard signature algorithms",
     "code": 53248
   },
+  "53261": {
+    "name": "bcrypt-pbkdf",
+    "tag": "multihash",
+    "status": "draft",
+    "description": "Bcrypt-PBKDF key derivation function",
+    "code": 53261
+  },
   "53479": {
     "name": "es256k",
     "tag": "varsig",
     "status": "draft",
-    "description": "ES256K Siganture Algorithm (secp256k1)",
+    "description": "ES256K Signature Algorithm (secp256k1)",
     "code": 53479
   },
   "53482": {
-    "name": "bls-12381-g1-sig",
+    "name": "bls12_381-g1-sig",
     "tag": "varsig",
     "status": "draft",
-    "description": "G1 signature for BLS-12381-G2",
+    "description": "G1 signature for BLS12-381",
     "code": 53482
   },
   "53483": {
-    "name": "bls-12381-g2-sig",
+    "name": "bls12_381-g2-sig",
     "tag": "varsig",
     "status": "draft",
-    "description": "G2 signature for BLS-12381-G1",
+    "description": "G2 signature for BLS12-381",
     "code": 53483
   },
   "53485": {
@@ -3639,6 +3912,13 @@
     "description": "JSON object containing only the required members of a JWK (RFC 7518 and RFC 7517) representing the public key. Serialisation based on JCS (RFC 8785)",
     "code": 60241
   },
+  "60704": {
+    "name": "ed2k",
+    "tag": "multihash",
+    "status": "draft",
+    "description": "eDonkey2000 hash.",
+    "code": 60704
+  },
   "61697": {
     "name": "fil-commitment-unsealed",
     "tag": "filecoin",
@@ -3652,6 +3932,41 @@
     "status": "permanent",
     "description": "Filecoin sector data commitment merkle node/root - sealed and replicated (CommR)",
     "code": 61698
+  },
+  "5316096": {
+    "name": "shelter-contract-manifest",
+    "tag": "shelter",
+    "status": "draft",
+    "description": "Shelter protocol contract manifest",
+    "code": 5316096
+  },
+  "5316097": {
+    "name": "shelter-contract-text",
+    "tag": "shelter",
+    "status": "draft",
+    "description": "Shelter protocol contract text",
+    "code": 5316097
+  },
+  "5316098": {
+    "name": "shelter-contract-data",
+    "tag": "shelter",
+    "status": "draft",
+    "description": "Shelter protocol contract data (contract chain)",
+    "code": 5316098
+  },
+  "5316099": {
+    "name": "shelter-file-manifest",
+    "tag": "shelter",
+    "status": "draft",
+    "description": "Shelter protocol file manifest",
+    "code": 5316099
+  },
+  "5316100": {
+    "name": "shelter-file-chunk",
+    "tag": "shelter",
+    "status": "draft",
+    "description": "Shelter protocol file chunk",
+    "code": 5316100
   },
   "7367777": {
     "name": "plaintextv2",
@@ -3738,7 +4053,7 @@
     "code": 13636096
   },
   "13636097": {
-    "name": "es284",
+    "name": "es384",
     "tag": "varsig",
     "status": "draft",
     "description": "ES384 Signature Algorithm",
@@ -3757,6 +4072,90 @@
     "status": "draft",
     "description": "RS256 Signature Algorithm",
     "code": 13636101
+  },
+  "13636352": {
+    "name": "es256k-msig",
+    "tag": "multisig",
+    "status": "draft",
+    "description": "ES256K (secp256k1) Signature as Multisig",
+    "code": 13636352
+  },
+  "13636353": {
+    "name": "bls12_381-g1-msig",
+    "tag": "multisig",
+    "status": "draft",
+    "description": "G1 signature for BLS-12381-G2 as Multisig",
+    "code": 13636353
+  },
+  "13636354": {
+    "name": "bls12_381-g2-msig",
+    "tag": "multisig",
+    "status": "draft",
+    "description": "G2 signature for BLS-12381-G1 as Multisig",
+    "code": 13636354
+  },
+  "13636355": {
+    "name": "eddsa-msig",
+    "tag": "multisig",
+    "status": "draft",
+    "description": "Edwards-Curve Digital Signature as Multisig",
+    "code": 13636355
+  },
+  "13636356": {
+    "name": "bls12_381-g1-share-msig",
+    "tag": "multisig",
+    "status": "draft",
+    "description": "G1 threshold signature share for BLS-12381-G2 as Multisig",
+    "code": 13636356
+  },
+  "13636357": {
+    "name": "bls12_381-g2-share-msig",
+    "tag": "multisig",
+    "status": "draft",
+    "description": "G2 threshold signature share for BLS-12381-G1 as Multisig",
+    "code": 13636357
+  },
+  "13636358": {
+    "name": "lamport-msig",
+    "tag": "multisig",
+    "status": "draft",
+    "description": "Lamport signature as Multisig",
+    "code": 13636358
+  },
+  "13636359": {
+    "name": "lamport-share-msig",
+    "tag": "multisig",
+    "status": "draft",
+    "description": "Lamport threshold signature share as Multisig",
+    "code": 13636359
+  },
+  "13636360": {
+    "name": "es256-msig",
+    "tag": "multisig",
+    "status": "draft",
+    "description": "ECDSA P-256 Signature as Multisig",
+    "code": 13636360
+  },
+  "13636361": {
+    "name": "es384-msig",
+    "tag": "multisig",
+    "status": "draft",
+    "description": "ECDSA P-384 Signature as Multisig",
+    "code": 13636361
+  },
+  "13636362": {
+    "name": "es521-msig",
+    "tag": "multisig",
+    "status": "draft",
+    "description": "ECDSA P-521 Signature as Multisig",
+    "code": 13636362
+  },
+  "13636363": {
+    "name": "rs256-msig",
+    "tag": "multisig",
+    "status": "draft",
+    "description": "RS256 Signature as Multisig",
+    "code": 13636363
   },
   "13639680": {
     "name": "scion",
