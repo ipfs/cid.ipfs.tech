@@ -346,7 +346,7 @@
     "name": "blake3-hashseq",
     "tag": "ipld",
     "status": "draft",
-    "description": " BLAKE3 hash sequence - per Iroh collections spec",
+    "description": "BLAKE3 hash sequence - per Iroh collections spec",
     "code": 128
   },
   "129": {
