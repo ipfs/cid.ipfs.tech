@@ -1,5 +1,5 @@
-@import 'npm:tachyons';
-@import 'npm:ipfs-css';
+@import 'tachyons/css/tachyons.css';
+@import 'ipfs-css/ipfs.css';
 
 #outputs {
   opacity: 0;

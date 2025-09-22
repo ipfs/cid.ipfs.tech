@@ -1,8 +1,8 @@
 import { CID } from 'multiformats/cid'
 import { bases } from 'multiformats/basics'
-import PeerId from 'peer-id'
 import { toString as uint8ArrayToString } from 'uint8arrays/to-string'
-import runes from 'runes2'
+import * as runes from 'runes2'
+import {peerIdFromString} from '@libp2p/peer-id'
 import codecs from './codecs.json'
 
 // Label's max length in DNS (https://tools.ietf.org/html/rfc1034#page-7)
@@ -142,9 +142,10 @@ document.addEventListener('DOMContentLoaded', () => {
         clearErrorOutput()
       } else {
         try {
-          const peerId = PeerId.createFromB58String(value)
-          const { cid } = decodeCID(peerId.toString())
-          const peerIdCid = cid.toV1().toString(bases.base32)
+          // Try to parse as Peer ID
+          const peerId = peerIdFromString(value)
+          // If successful, convert to CID representation
+          const peerIdCid = peerId.toCID().toString(bases.base32)
           err = new Error(`The value is a Peer ID. Try using its CID representation: ${peerIdCid}`)
         } catch (_) {  }
         console.error(err.message || err)
