@@ -86,6 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const dnsCidV1Output = document.querySelector('#dnscidv1')
   const humanReadableCidOutput = document.querySelector('#hr-cid')
   const errorOutput = document.querySelector('#input-error')
+  const retrievalCheckLink = document.querySelector('#retrieval-check-link')
 
   function clearErrorOutput () {
     errorOutput.innerText = ''
@@ -133,6 +134,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const dnsPrefix = toDNSPrefix(data.cid)
       dns.style.visibility = cidb32 !== dnsPrefix ? 'visible' : 'hidden'
       dnsCidV1Output.innerHTML = dnsPrefix
+
+      // Update retrieval check link with the parsed CID
+      const retrievalCheckUrl = `https://check.ipfs.network/?cid=${data.cid.toString()}`
+      retrievalCheckLink.href = retrievalCheckUrl
 
       clearErrorOutput()
       details.style.opacity = 1
