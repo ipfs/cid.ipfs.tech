@@ -132,11 +132,11 @@ document.addEventListener('DOMContentLoaded', () => {
       inputByteLength.innerHTML = new Blob([value.trim()]).size
 
       const dnsPrefix = toDNSPrefix(data.cid)
-      dns.style.visibility = cidb32 !== dnsPrefix ? 'visible' : 'hidden'
+      dns.style.display = cidb32 !== dnsPrefix ? 'block' : 'none'
       dnsCidV1Output.innerHTML = dnsPrefix
 
       // Update retrieval check link with the parsed CID
-      const retrievalCheckUrl = `https://check.ipfs.network/?cid=${data.cid.toString()}`
+      const retrievalCheckUrl = `https://check.ipfs.network/?cid=${encodeURIComponent(data.cid.toString())}`
       retrievalCheckLink.href = retrievalCheckUrl
 
       clearErrorOutput()
