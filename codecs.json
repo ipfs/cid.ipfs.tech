@@ -811,6 +811,13 @@
     "description": "CRC-64 non-cryptographic hash algorithm (ECMA-182 - Annex B)",
     "code": 356
   },
+  "357": {
+    "name": "crc64-nvme",
+    "tag": "hash",
+    "status": "draft",
+    "description": "CRC-64 checksum based on the NVME polynomial as specified in the NVM Express® NVM Command Set Specification",
+    "code": 357
+  },
   "400": {
     "name": "unix",
     "tag": "multiaddr",
@@ -985,6 +992,13 @@
     "status": "draft",
     "description": "Content Addressable aRchive (CAR)",
     "code": 514
+  },
+  "528": {
+    "name": "x509-certificate",
+    "tag": "serialization",
+    "status": "draft",
+    "description": "DER-encoded X.509 (PKIX) certificate per RFC 5280; single certificate only (no chain); raw DER bytes (not PEM)",
+    "code": 528
   },
   "768": {
     "name": "ipns-record",
@@ -1238,6 +1252,27 @@
     "description": "ML-KEM 1024 public key; as specified by FIPS 203",
     "code": 4621
   },
+  "4624": {
+    "name": "mldsa-44-pub",
+    "tag": "key",
+    "status": "draft",
+    "description": "ML-DSA 44 public key; as specified by FIPS 204",
+    "code": 4624
+  },
+  "4625": {
+    "name": "mldsa-65-pub",
+    "tag": "key",
+    "status": "draft",
+    "description": "ML-DSA 65 public key; as specified by FIPS 204",
+    "code": 4625
+  },
+  "4626": {
+    "name": "mldsa-87-pub",
+    "tag": "key",
+    "status": "draft",
+    "description": "ML-DSA 87 public key; as specified by FIPS 204",
+    "code": 4626
+  },
   "4665": {
     "name": "multisig",
     "tag": "multiformat",
@@ -1370,6 +1405,48 @@
     "status": "draft",
     "description": "SM2 private key",
     "code": 4880
+  },
+  "4881": {
+    "name": "ed448-priv",
+    "tag": "key",
+    "status": "draft",
+    "description": "Ed448 private key",
+    "code": 4881
+  },
+  "4882": {
+    "name": "x448-priv",
+    "tag": "key",
+    "status": "draft",
+    "description": "X448 private key",
+    "code": 4882
+  },
+  "4883": {
+    "name": "mlkem-512-priv",
+    "tag": "key",
+    "status": "draft",
+    "description": "ML-KEM 512 private key; as specified by FIPS 203",
+    "code": 4883
+  },
+  "4884": {
+    "name": "mlkem-768-priv",
+    "tag": "key",
+    "status": "draft",
+    "description": "ML-KEM 768 public key; as specified by FIPS 203",
+    "code": 4884
+  },
+  "4885": {
+    "name": "mlkem-1024-priv",
+    "tag": "key",
+    "status": "draft",
+    "description": "ML-KEM 1024 public key; as specified by FIPS 203",
+    "code": 4885
+  },
+  "4886": {
+    "name": "jwk_jcs-priv",
+    "tag": "key",
+    "status": "draft",
+    "description": "JSON object containing only the required members of a JWK (RFC 7518 and RFC 7517) representing the private key. Serialisation based on JCS (RFC 8785)",
+    "code": 4886
   },
   "6676": {
     "name": "lamport-sha3-512-pub",
