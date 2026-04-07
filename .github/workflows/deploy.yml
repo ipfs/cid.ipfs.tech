@@ -2,7 +2,7 @@
 # This workflow has access to secrets but never executes untrusted code
 # It only downloads and deploys pre-built artifacts from the build workflow
 # Security: Fork code cannot access secrets as it only runs in build workflow
-# Deploys to IPFS/Storacha for all branches and GitHub Pages for main branch only
+# Deploys to IPFS Cluster for all branches and GitHub Pages for main branch only
 
 name: Deploy
 
@@ -47,8 +47,6 @@ jobs:
           cluster-user: ${{ secrets.CLUSTER_USER }}
           cluster-password: ${{ secrets.CLUSTER_PASSWORD }}
           cluster-pin-expire-in: ${{ github.event.workflow_run.head_branch != 'main' && '2160h' || '' }}
-          storacha-key: ${{ secrets.STORACHA_KEY }}
-          storacha-proof: ${{ secrets.STORACHA_PROOF }}
           github-token: ${{ github.token }}
 
   dnslink-update:
