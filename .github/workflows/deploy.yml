@@ -39,7 +39,7 @@ jobs:
           github-token: ${{ github.token }}
 
       - name: Deploy to IPFS
-        uses: ipshipyard/ipfs-deploy-action@4497bbc461baa824112935cf38debef9d121ea3b # v2 preview
+        uses: ipshipyard/ipfs-deploy-action@v1
         id: deploy
         with:
           path-to-deploy: ${{ env.BUILD_PATH }}
