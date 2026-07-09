@@ -23,6 +23,6 @@
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "devDependencies": {
-    "vite": "^7.1.7"
+    "vite": "^7.1.11"
   }
 }
